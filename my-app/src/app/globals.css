@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+body, html {
+  min-height: 100vh; 
+ }
+
+
+:root {
+  --color-bg: #f5f7fa;
+  --color-card-bg: #ffffff;
+  --color-primary: #4a90e2;
+  --color-primary-light: #d1e3fc;
+  --color-text: #333333;
+  --color-muted: #888888;
+  --color-danger: #e04f5f;
+  --color-border: #e1e4e8;
+  --color-disabled: #cccccc;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page-container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.35);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.variant-label {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.variant-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--color-text);
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.variant-select:hover,
+.variant-select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.add-to-cart-btn {
+  margin-top: 0.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #357ab7;
+}
+
+.out-of-stock-btn {
+  margin-top: 0.5rem;
+  background-color: var(--color-disabled);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: not-allowed;
+}
+
+.page-container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px; /* increase max width */
+  margin: 0 auto;
+}
+
+.cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
