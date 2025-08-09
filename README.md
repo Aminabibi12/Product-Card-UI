@@ -36,3 +36,6 @@ Responsiveness considerations
 
 2. The product cards wrap or adjust spacing to fit smaller screens gracefully.
 
+
+Depoyed URL is : https://product-card-web-page.vercel.app/
+
